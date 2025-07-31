@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int Celcius,Fahrenheit;
+    float Celcius,Fahrenheit;
     printf("Enter the value of temprature in celcius: ", Celcius);
     scanf("%f", &Celcius);
     Fahrenheit=(Celcius*9/5)+32.0;
