@@ -1,22 +1,19 @@
 #include <stdio.h>
-
-int main() {
-    int N;
-    printf("Enter total number of participants (N): ");
-    scanf("%d", &N);
-
-    int sum = N * (N + 1) / 2;  // Sum of first N natural numbers
-    int attendedSum = 0;
-    int id;
-
-    printf("Enter the %d attended participant IDs:\n", N - 1);
-    for (int i = 0; i < N - 1; i++) {
+void main()
+{
+    int n;
+    printf("enter total number of participants: ");
+    scanf("%d",&n);
+    int sum=n*(n+1)/2;
+    int attendedsum=0;
+    int id,missingid;
+    printf("Enter the %d attended participant IDs:\n",n-1);
+    for (int i=0;i<n-1;i++)
+    {
         scanf("%d", &id);
-        attendedSum += id;
+        attendedsum += id;
     }
 
-    int missingID = sum - attendedSum;
-    printf("The missing participant ID is: %d\n", missingID);
-
-    return 0;
+    missingid=sum-attendedsum;
+    printf("The missing participant ID is: %d\n", missingid);
 }
