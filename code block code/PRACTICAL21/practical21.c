@@ -6,10 +6,10 @@ void main()
     printf("Enter 25 integers:\n");
     for (i=0;i<25;i++)
     {
-        printf("Enter number %d: ", i + 1);
+        printf("Enter number %d:",i+1);
         scanf("%d",&numbers[i]);
     }
-    for (i = 0; i < 25; i++)
+    for (i=0;i<25;i++)
     {
         if (numbers[i]>0)
             positivecount++;
@@ -20,8 +20,9 @@ void main()
         else
             oddcount++;
     }
-    printf("Total Positive Numbers: %d\n", positivecount);
-    printf("Total Negative Numbers: %d\n", negativecount);
-    printf("Total Even Numbers: %d\n", evencount);
-    printf("Total Odd Numbers: %d\n", oddcount);
+    printf("Total Positive Numbers: %d\n",positivecount);
+    printf("Total Negative Numbers: %d\n",negativecount);
+    printf("Total Even Numbers: %d\n",evencount);
+    printf("Total Odd Numbers: %d\n",oddcount);
 }
+
